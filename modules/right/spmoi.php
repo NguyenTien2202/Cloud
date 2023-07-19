@@ -10,7 +10,7 @@
 					?>
                     	<li><a href="?quanly=chitietsp&idloaisp=<?php echo $dong_moinhat['loaisp'] ?>&id=<?php echo $dong_moinhat['idsanpham'] ?>">
                         	<img src="admincp/modules/quanlysanpham/uploads/<?php echo $dong_moinhat['hinhanh'] ?>" width="150" height="150" />
-                            <p style="color:skyblue"><?php echo $dong_moinhat['tensp'] ?></p>
+                            <p style="color:black"><?php echo $dong_moinhat['tensp'] ?></p>
                             <p style="color:red;font-weight:bold; border:1px solid #d9d9d9; width:150px;
                             height:30px; line-height:30px;margin-left:35px;margin-bottom:5px;"><?php echo number_format($dong_moinhat['giadexuat']).' '.'VNĐ'?></p>
                             
@@ -44,7 +44,7 @@
  				?>
                     	<li><a href="?quanly=chitietsp&idloaisp=<?php echo $dong['loaisp'] ?>&id=<?php echo $dong['idsanpham'] ?>">
                         	<img src="admincp/modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="150" height="150" />
-                            <p style="color:skyblue"><?php echo $dong['tensp']?></p>
+                            <p style="color:black"><?php echo $dong['tensp']?></p>
                             <p style="color:red;font-weight:bold; border:1px solid #d9d9d9; width:150px;
                             height:30px; line-height:30px;margin-left:35px;margin-bottom:5px;"><?php echo number_format($dong['giadexuat']).' '.'VNĐ' ?></p>
                             

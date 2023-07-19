@@ -13,7 +13,7 @@
             <li><a href="index.php?quanly=tintuc&ac=them">Quản lý tin tức</a></li>
             <li><a href="#">Quản lý hóa đơn</a></li>
             <form action="" method="post" enctype="multipart/form-data">
-            <input type="submit" name="logout" value="Đăng xuất" style="background:#06F;color:#fff;width:200px;height:30px;" />
+            <input type="submit" name="logout" value="Đăng xuất" style="background:#06F;color:#caafdd;width:200px;height:30px;" />
             </form>
         </ul>
        

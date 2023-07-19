@@ -29,10 +29,6 @@
     <td><input type="text" name="giagiam"></td>
   </tr>
   <tr>
-    <td>Nội dung</td>
-    <td><textarea name="noidung" cols="40" rows="10"></textarea></td>
-  </tr>
-  <tr>
     <td>Số lượng</td>
     <td><input type="text" name="soluong"></td>
   </tr>
@@ -76,7 +72,13 @@
      <option value="2">Không kích hoạt</option>
     </select></td>
   </tr>
+
   <tr>
+    <td>Nội dung</td>
+    <td><textarea name="noidung" cols="40" rows="10"></textarea></td>
+  </tr>
+  <tr>
+    
     <td colspan="2"><div align="center">
       <input type="submit" name="them" value="Thêm sản phẩm">
     </div></td>

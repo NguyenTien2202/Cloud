@@ -56,10 +56,9 @@
 			
 	}else{
 		
-		echo 'Giỏ hàng của bạn trống';
+		echo ' --- Giỏ hàng của bạn trống ---';
 	}
 	
-
  	echo'</table>';
 	
 	
