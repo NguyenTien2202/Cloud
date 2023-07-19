@@ -3,7 +3,7 @@
 	//xoa
 	if(isset($_GET['quanly'])&&$_GET['quanly']=='xoa'){
 		$id=$_GET['id'];
-		$sql_xoa=mysql_query("delete from gallery where id_sp='$id'");
+		$sqli_xoa=mysqli_query($conn,"delete from gallery where id_sp='$id'");
 		header('location:../../index.php?quanly=gallery&ac=lietke&id='.$id);
 	}
 	//them
@@ -36,7 +36,7 @@
 					mkdir('uploads',0777);
 					
 				}if(move_uploaded_file($tmp,$path)){
-					$sql=mysql_query("insert into gallery(id_sp,hinhanhsp) value('$id','".$hinhanhsp."')");
+					$sqli=mysqli_query($conn,"insert into gallery(id_sp,hinhanhsp) value('$id','".$hinhanhsp."')");
 					header('location:../../index.php?quanly=gallery&ac=lietke&id='.$id);
 				}else{
 					echo $thongbao[]='Upload file thất bại';

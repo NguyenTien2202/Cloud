@@ -1,6 +1,6 @@
 <?php
-	$sql=mysql_query("select * from sanpham where idsanpham='$_GET[id]'");
-	$dong=mysql_fetch_array($sql);
+	$sql=mysqli_query($conn,"select * from sanpham where idsanpham='$_GET[id]'");
+	$dong=mysqli_fetch_array($sql);
 	$id=$_GET['id'];
 ?>
 <div class="button_themsp">
@@ -17,14 +17,14 @@
     <td>Quản lý</td>
   </tr>
   <tr>
-    <td><?php echo $dong['tensp'] ?></td>
+    <td><?php echo $dong['tensp']?></td>
     <td><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="150" height="150"></td>
     <td>
     <?php
-	$sql_gal=mysql_query("select hinhanhsp from gallery where id_sp='$_GET[id]'");
-	$count=mysql_num_rows($sql_gal);
+	$sql_gal=mysqli_query($conn,"select hinhanhsp from gallery where id_sp='$_GET[id]'");
+	$count=mysqli_num_rows($sql_gal);
 	if($count>0){
-	while($dong_gal=mysql_fetch_array($sql_gal)){
+	while($dong_gal=mysqli_fetch_array($sql_gal)){
 	?>
     <p style="margin-bottom:10px;"><img src="modules/gallery/uploads/<?php echo $dong_gal['hinhanhsp'] ?>" width="50" height="50"></p>
     <?php

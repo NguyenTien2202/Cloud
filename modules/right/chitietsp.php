@@ -34,6 +34,7 @@
                             	<strong>Tên sản phẫm: </strong><em style="color:red"><?php echo $dong['tensp'] ?></em></p>
 
                                            <p><strong>Mã sản phẩm:</strong>  <?php echo $dong['masp'] ?> </p> 
+										   <p><strong>Hãng sx:</strong>  <?php echo $dong['hieusp'] ?> </p>
                                            <p><strong>Giá bán:</strong><span style="color:red;"> <?php echo number_format($dong['giadexuat']).' '.'VNĐ'?></span></p> 
                                            <p style="text-decoration:underline;color:blue;"><strong> Tình trạng:</strong> Còn hàng </p> 
                                           

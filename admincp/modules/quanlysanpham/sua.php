@@ -69,10 +69,10 @@
   $row_hieusp=mysqli_query($conn,$sql_hieusp);
   ?>
     <td>Tên nhà sx</td>
-    <td><select name="nhasx">
+    <td><select name="hieusp">
     <?php
 	while($dong_hieusp=mysqli_fetch_array($row_hieusp)){
-		if($dong['nhasx']==$dong_hieusp['idhieusp']){
+		if($dong['hieusp']==$dong_hieusp['idhieusp']){
 	?>
     	<option selected="selected" value="<?php echo $dong_hieusp['idhieusp'] ?>"><?php echo $dong_hieusp['tenhieusp'] ?></option>
         <?php

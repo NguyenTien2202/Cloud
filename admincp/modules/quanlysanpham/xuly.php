@@ -10,21 +10,21 @@
 	$soluong=$_POST['soluong'];
 	$noidung=$_POST['noidung'];
 	$loaisp=$_POST['loaisp'];
-	$nhasx=$_POST['nhasx'];
+	$hieusp=$_POST['hieusp'];
 	$tinhtrang=$_POST['tinhtrang'];
 	$trang=$_GET['trang'];
 	
 	if(isset($_POST['them'])){
 		//them
-		 $sql_them=("insert into sanpham (tensp,masp,hinhanh,giadexuat,giagiam,soluong,noidung,loaisp,nhasx,tinhtrang) value('$tensp','$masp','$hinhanh','$giadexuat','$giagiam','$soluong','$noidung','$loaisp','$nhasx','$tinhtrang')");
+		 $sql_them=("insert into sanpham (tensp,masp,hinhanh,giadexuat,giagiam,soluong,noidung,loaisp,hieusp,tinhtrang) value('$tensp','$masp','$hinhanh','$giadexuat','$giagiam','$soluong','$noidung','$loaisp','$hieusp','$tinhtrang')");
 		mysqli_query($conn,$sql_them);
 		header('location:../../index.php?quanly=sanpham&ac=lietke');
 	}elseif(isset($_POST['sua'])){
 		//sua
 		if($hinhanh!=''){
-	  $sql_sua = "update sanpham set tensp='$tensp',masp='$masp',hinhanh='$hinhanh',giadexuat='$giadexuat',giagiam='$giagiam',soluong='$soluong',noidung='$noidung',loaisp='$loaisp',nhasx='$nhasx',tinhtrang='$tinhtrang' where idsanpham='$_GET[id]'";
+	  $sql_sua = "update sanpham set tensp='$tensp',masp='$masp',hinhanh='$hinhanh',giadexuat='$giadexuat',giagiam='$giagiam',soluong='$soluong',noidung='$noidung',loaisp='$loaisp',hieusp='$hieusp',tinhtrang='$tinhtrang' where idsanpham='$_GET[id]'";
 		}else{
-			$sql_sua = "update sanpham set tensp='$tensp',masp='$masp',giadexuat='$giadexuat',giagiam='$giagiam',soluong='$soluong',noidung='$noidung',loaisp='$loaisp',nhasx='$nhasx',tinhtrang='$tinhtrang' where idsanpham='$_GET[id]'";
+			$sql_sua = "update sanpham set tensp='$tensp',masp='$masp',giadexuat='$giadexuat',giagiam='$giagiam',soluong='$soluong',noidung='$noidung',loaisp='$loaisp',hieusp='$hieusp',tinhtrang='$tinhtrang' where idsanpham='$_GET[id]'";
 		}
 		mysqli_query($conn,$sql_sua);
 		header('location:../../index.php?quanly=sanpham&ac=lietke');

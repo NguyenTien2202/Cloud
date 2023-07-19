@@ -5,11 +5,11 @@
 	
 ?>
 <?php
-	$sql_tenloaisp="select tenloaisp from loaisp where idloaisp='$_GET[id]' ";
+	$sql_tenloaisp="select tenloaisp from loaisp ";
 	$row=mysqli_query($conn,$sql_tenloaisp);
 	$dong=mysqli_fetch_array($row);
 ?>
-	<div class="tieude"><?php echo $dong['tenloaisp'] ?></div>
+	<div class="tieude"></div>
                 	<ul class="product">
                      <?php
 					 if($count>0){

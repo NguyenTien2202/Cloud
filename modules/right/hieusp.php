@@ -1,15 +1,15 @@
 <?php
-	$sql_hieusp="select * from sanpham where sanpham.nhasx='$_GET[id]'";
+	$sql_hieusp="select * from sanpham where sanpham.hieusp='$_GET[id]'";
 	$num_hieusp=mysqli_query($conn,$sql_hieusp);
 	$count=mysqli_num_rows($num_hieusp);
 	
 ?>
 <?php
-	$sql_tenhieusp="select tenhieusp from hieusp where idhieusp='$_GET[id]' ";
+	$sql_tenhieusp="select tenhieusp from hieusp ";
 	$row=mysqli_query($conn,$sql_tenhieusp);
 	$dong=mysqli_fetch_array($row);
 ?>
-	<div class="tieude"><?php echo $dong['tenhieusp'] ?></div>
+	<div class="tieude"></div>
                 	<ul class="product">
                      <?php
 					 if($count>0){

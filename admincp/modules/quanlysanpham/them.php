@@ -42,7 +42,7 @@
     <?php
 	while($dong_loaisp=mysqli_fetch_array($row_loaisp)){
 	?>
-    	<option value="<?php echo $dong_loaisp['idloaisp'] ?>"><?php echo $dong_loaisp['tenloaisp'] ?></option>
+    	<option value="<?php echo $dong_loaisp['tenloaisp'] ?>"><?php echo $dong_loaisp['tenloaisp'] ?></option>
         <?php
 	}
 		?>
@@ -54,11 +54,11 @@
   $row_hieusp=mysqli_query($conn,$sql_hieusp);
   ?>
     <td>Tên nhà sx</td>
-    <td><select name="nhasx">
+    <td><select name="hieusp">
     <?php
 	while($dong_hieusp=mysqli_fetch_array($row_hieusp)){
 	?>
-    	<option value="<?php echo $dong_hieusp['idhieusp'] ?>"><?php echo $dong_hieusp['tenhieusp'] ?></option>
+    	<option value="<?php echo $dong_hieusp['tenhieusp'] ?>"><?php echo $dong_hieusp['tenhieusp'] ?></option>
         <?php
 	}
 		?>

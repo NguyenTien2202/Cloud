@@ -10,7 +10,7 @@
 	}else{
 		$trang1=($trang*5)-5;
 	}
-	$sql_lietkesp="select * from sanpham,hieusp,loaisp where loaisp.idloaisp=sanpham.loaisp and hieusp.idhieusp=sanpham.nhasx order by sanpham.idsanpham desc limit $trang1,5 ";
+	$sql_lietkesp="select * from sanpham,hieusp,loaisp where loaisp.tenloaisp=sanpham.loaisp and hieusp.tenhieusp=sanpham.hieusp order by sanpham.idsanpham desc limit $trang1,5 ";
 	$row_lietkesp=mysqli_query($conn,$sql_lietkesp);
 
 ?>

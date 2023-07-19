@@ -28,7 +28,7 @@
 	while($dong_loai=mysqli_fetch_array($sql_loai)){
 		
 	echo '<div class="tieude">'.$dong_loai['tenloaisp'].'</div>';
- 	$sql_loaisp="select * from loaisp inner join sanpham on sanpham.loaisp=loaisp.idloaisp where sanpham.loaisp='".$dong_loai['idloaisp']."'";
+ 	$sql_loaisp="select * from loaisp inner join sanpham on sanpham.loaisp=loaisp.tenloaisp where sanpham.loaisp='".$dong_loai['tenloaisp']."'";
 	$row=mysqli_query($conn,$sql_loaisp);
 	$count=mysqli_num_rows($row);
 	if($count>0){
