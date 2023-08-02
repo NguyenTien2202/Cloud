@@ -43,9 +43,7 @@
 						
 						include('modules/quanlytintuc/sua.php');
 					}elseif(($tam == 'timkiem')&&($tam1 == 'sp')){
-						
-						include('modules/timkiem/timkiem.php');
-					}elseif(($tam == 'gallery')&&($tam1 == 'them')){
+
 						include('modules/gallery/them.php');
 					}elseif(($tam == 'gallery')&&($tam1 == 'lietke')){
 						include('modules/gallery/lietke.php');

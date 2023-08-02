@@ -50,9 +50,9 @@
     <td><select name="loaisp">
      <?php
 	while($dong_loaisp=mysqli_fetch_array($row_loaisp)){
-		if($dong['loaisp']==$dong_loaisp['idloaisp']){
+		if($dong['loaisp']==$dong_loaisp['tenloaisp']){
 	?>
-    	<option selected="selected" value="<?php echo $dong_loaisp['idloaisp'] ?>"><?php echo $dong_loaisp['tenloaisp'] ?></option>
+    	<option selected="selected" value="<?php echo $dong_loaisp['tenloaisp'] ?>"><?php echo $dong_loaisp['tenloaisp'] ?></option>
         <?php
 	}else{
 		?>
@@ -74,11 +74,11 @@
 	while($dong_hieusp=mysqli_fetch_array($row_hieusp)){
 		if($dong['hieusp']==$dong_hieusp['idhieusp']){
 	?>
-    	<option selected="selected" value="<?php echo $dong_hieusp['idhieusp'] ?>"><?php echo $dong_hieusp['tenhieusp'] ?></option>
+    	<option selected="selected" value="<?php echo $dong_hieusp['tenhieusp'] ?>"><?php echo $dong_hieusp['tenhieusp'] ?></option>
         <?php
 	}else{
 		?>
-        <option value="<?php echo $dong_hieusp['idhieusp'] ?>"><?php echo $dong_hieusp['tenhieusp'] ?></option>
+        <option value="<?php echo $dong_hieusp['tenhieusp'] ?>"><?php echo $dong_hieusp['tenhieusp'] ?></option>
         <?php
 	}
 	}

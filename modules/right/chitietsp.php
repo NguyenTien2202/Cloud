@@ -5,11 +5,11 @@
 ?>
 	<div class="tieude">Chi tiết sản phẩm</div>
    
-                	<div class="box_chitietsp">
+	<div class="box_chitietsp">
                     	<div class="box_hinhanh">
-                        	<img src="admincp/modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" data-zoom-image="imgs/op-lung-sony-z3-pelosi-50.jpg"  width="200" height="200" />
+                        	<img src="admincp/modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>"  width="200" height="200" />
                             <?php
-                            $sql_gallery=mysqli_query($conn,'select * from gallery where id_sp="$_GET[id]" limit 3');							
+                            $sql_gallery=mysqli_query($conn,"select * from gallery where id_sp='$_GET[id]' limit 3");							
 							$row_gallery=mysqli_num_rows($sql_gallery);
 							
 							?>
@@ -31,15 +31,15 @@
                         <div class="box_info">
                          <form action="update_cart.php?id=<?php echo $dong['idsanpham'] ?>" method="post" enctype="multipart/form-data">
                         	<p>
-                            	<strong>Tên sản phẫm: </strong><em style="color:red"><?php echo $dong['tensp'] ?></em></p>
+                            	<strong>Tên sản phẫm: </strong><em style="color:rgb(106, 106, 210)"><?php echo $dong['tensp'] ?></em></p>
 
                                            <p><strong>Mã sản phẩm:</strong>  <?php echo $dong['masp'] ?> </p> 
 										   <p><strong>Hãng sx:</strong>  <?php echo $dong['hieusp'] ?> </p>
-                                           <p><strong>Giá bán:</strong><span style="color:red;"> <?php echo number_format($dong['giadexuat']).' '.'VNĐ'?></span></p> 
-                                           <p style="text-decoration:underline;color:blue;"><strong> Tình trạng:</strong> Còn hàng </p> 
+                                           <p><strong>Giá bán:</strong><span style="color:rgb(106, 106, 210);"> <?php echo number_format($dong['giadexuat']).' '.'VNĐ'?></span></p> 
+                                           <p style="color:rgb(106, 106, 210);"><strong> Tình trạng:</strong> Còn hàng </p> 
                                           
                                            <p><strong>Số lượng:</strong><input type="text" name="soluong" size="3" value="1" /></p>
-                                           	 <input type="submit" name="add_to_cart" value="Mua hàng" style="margin:10px;width:100px;height:40px;background:#9F6;color:#000;font-size:18px;border-radius:8px;" />
+                                           	 <input type="submit" name="add_to_cart" value="Mua hàng" style="margin:10px;width:100px;height:40px;background:rgb(106, 106, 210);color:white;font-size:18px;border-radius:8px;" />
                                              
                            </form>              
                                        
@@ -51,8 +51,7 @@
               		<div class="tabs_panel">
                     	<ul class="tabs">
                         	<li rel="panel1" class="active">Thông tin sản phẩm</li>
-                            <li rel="panel2">Hình ảnh sản phẫm</li>
-                            <li rel="panel3">Khách hàng đánh giá</li>
+							<li rel="panel2">Hình ảnh sản phẩm</li>
                         </ul>
                         <?php
 					$sql_thongtinsp=mysqli_query($conn, "select * from sanpham where idsanpham='$_GET[id]'");
@@ -70,7 +69,8 @@
 						echo '<p style="padding:30px;">Hiện chưa có thông tin chính thức</p>';
 					}
 				   ?>
-                          <div id="panel2" class="panel">
+
+					<div id="panel2" class="panel">
                              <?php
 					$sql_hinhanhsp=mysqli_query($conn,"select * from gallery where id_sp='$_GET[id]'");
 					$count=mysqli_num_rows($sql_hinhanhsp);
@@ -86,13 +86,7 @@
 					}
 						?>
                         </div>
-                        
-                          <div id="panel3" class="panel">
-                        	<p>Hàng chính hãng tốt đẹp</p>
-                        
-                        </div>
                     
-                    </div>
                    <?php
 				   	$sql_lienquan="select * from sanpham where loaisp='$_GET[idloaisp]' and sanpham.idsanpham<>$_GET[id] ";
 					$row_lienquan=mysqli_query($conn,$sql_lienquan);
@@ -109,7 +103,7 @@
                         		 <li><a href="?quanly=chitietsp&idloaisp=<?php echo $dong_lienquan['loaisp'] ?>&id=<?php echo $dong_lienquan['idsanpham'] ?>">
                         	<img src="admincp/modules/quanlysanpham/uploads/<?php echo $dong_lienquan['hinhanh'] ?>" width="150" height="150" />
                             <p>Tên sp : <?php echo $dong_lienquan['tensp'] ?></p>
-                            <p style="color:red;">Giá : <?php echo number_format($dong_lienquan['giadexuat']).' '.'VNĐ' ?></p>
+                            <p style="color:rgb(106, 106, 210);">Giá : <?php echo number_format($dong_lienquan['giadexuat']).' '.'VNĐ' ?></p>
                             
                         	
                         </a></li>
@@ -118,6 +112,7 @@
 					?>
                         </ul>
                     </div><!-- Ket thuc box sp liên quan -->
+					
             <?php
 					}else{
 						echo'<div class="tieude">Sản phẩm liên quan</div>';

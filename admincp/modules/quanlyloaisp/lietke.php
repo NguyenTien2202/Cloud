@@ -29,8 +29,8 @@
 		echo 'Không kích hoạt';
 	}
     ?></td>
-    <td><a href="index.php?quanly=loaisp&ac=sua&id=<?php echo $dong['idloaisp'] ?>"><center><img src="../imgs/edit.png" width="30" height="30" /></center></a></td>
-    <td><a href="modules/quanlyloaisp/xuly.php?id=<?php echo $dong['idloaisp']?>" class="delete_link"><center><img src="../imgs/delete.png" width="30" height="30" /></center></a></td>
+    <td><a href="index.php?quanly=loaisp&ac=sua&id=<?php echo $dong['idloaisp'] ?>"><center><img src="../imgs/edit1.png" width="30" height="30" /></center></a></td>
+    <td><a href="modules/quanlyloaisp/xuly.php?id=<?php echo $dong['idloaisp']?>" class="delete_link"><center><img src="../imgs/delete1.png" width="30" height="30" /></center></a></td>
   </tr>
   <?php
   $i++;

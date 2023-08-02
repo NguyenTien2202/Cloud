@@ -1,3 +1,3 @@
 	<div class="header">
-        	<img src="imgs/banner.png"/>
+        	<img src="imgs/Banner.png"/>
         </div>

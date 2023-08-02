@@ -19,7 +19,7 @@
                        
                         	<img src="admincp/modules/quanlysanpham/uploads/<?php echo $dong_loaisp['hinhanh'] ?>" width="150" height="150" />
                             <p><?php echo $dong_loaisp['tensp'] ?></p>
-                            <p><?php echo $dong_loaisp['giadexuat'] ?></p>
+                            <p style="color:purple;"><?php echo $dong_loaisp['giadexuat'] ?></p>
                             
                         	<p>Chi tiết</p>
                         </a></li>

@@ -15,11 +15,11 @@
 					 if($count>0){
 						while($dong_hieusp=mysqli_fetch_array($num_hieusp)){
 						?>
-                    	<li><a href="?quanly=chitietsp&idhieusp=<?php echo $dong_hieusp['hieusp'] ?>&id=<?php echo $dong_hieusp['idsanpham'] ?>">
+                    	<li><a href="?quanly=chitietsp1&idhieusp=<?php echo $dong_hieusp['hieusp'] ?>&id=<?php echo $dong_hieusp['idsanpham'] ?>">
                        
                         	<img src="admincp/modules/quanlysanpham/uploads/<?php echo $dong_hieusp['hinhanh'] ?>" width="150" height="150" />
                             <p><?php echo $dong_hieusp['tensp'] ?></p>
-                            <p><?php echo $dong_hieusp['giadexuat'] ?></p>
+                            <p style="color:purple;"><?php echo $dong_hieusp['giadexuat'] ?></p>
                             
                         	<p>Chi tiết</p>
                         </a></li>

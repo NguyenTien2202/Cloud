@@ -12,8 +12,12 @@
 					$tam ='';
 				}if($tam == 'chitietsp'){
 					include('modules/right/chitietsp.php');
+				}elseif($tam == 'chitietsp1'){
+					include('modules/right/chitietsp1.php');
 				}elseif($tam == 'loaisp'){
 					include('modules/right/loaisp.php');
+				}elseif($tam == 'hieusp'){
+					include('modules/right/hieusp.php');
 				}elseif($tam == 'dathang'){
 					include('modules/right/dathang.php');
 				}elseif($tam == 'dangkymoi'){

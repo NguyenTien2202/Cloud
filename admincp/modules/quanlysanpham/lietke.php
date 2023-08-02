@@ -43,7 +43,7 @@
     <td><?php echo $dong['tensp'] ?></td>
     <td><?php echo $dong['masp'] ?></td>
     <td><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="80" height="80" />
-    <a href="index.php?quanly=gallery&ac=lietke&id=<?php echo $dong['idsanpham'] ?>" style="text-align:center;text-decoration:none; font-size:18px;color:#06F;">Gallery</a>
+    <a href="index.php?quanly=gallery&ac=lietke&id=<?php echo $dong['idsanpham'] ?>" style="text-align:center;text-decoration:none; font-size:18px;color:#caafdd;">Gallery</a>
     </td>
     <td><?php echo number_format($dong['giadexuat']) ?></td>
     <td><?php echo number_format($dong['giagiam']) ?></td>
@@ -59,8 +59,8 @@
 		echo 'Không kích hoạt';
 	}
     ?></td>
-    <td><a href="index.php?quanly=sanpham&ac=sua&id=<?php echo $dong['idsanpham'] ?>" ><center><img src="../imgs/edit.png" width="30" height="30" /></center></a></td>
-    <td><a href="modules/quanlysanpham/xuly.php?id=<?php echo $dong['idsanpham']?>" class="delete_link"><center><img src="../imgs/delete.png" width="30" height="30"   /></center></a></td>
+    <td><a href="index.php?quanly=sanpham&ac=sua&id=<?php echo $dong['idsanpham'] ?>" ><center><img src="../imgs/edit1.png" width="30" height="30" /></center></a></td>
+    <td><a href="modules/quanlysanpham/xuly.php?id=<?php echo $dong['idsanpham']?>" class="delete_link"><center><img src="../imgs/delete1.png" width="30" height="30"   /></center></a></td>
   </tr>
   <?php
   $i++;

@@ -17,7 +17,7 @@
     <td>Quản lý</td>
   </tr>
   <tr>
-    <td><?php echo $dong['tensp']?></td>
+    <td><?php echo $dong['tensp'] ?></td>
     <td><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="150" height="150"></td>
     <td>
     <?php
